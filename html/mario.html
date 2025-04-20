@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario Bros Arcade</title>
+  <link rel="stylesheet" href="../css/mario.css" />
+</head>
+<body>
+  <main>
+    <!-- Pantalla de Inicio -->
+    <section id="start-screen" class="screen active">
+      <h1>🍄 Mario Bros Arcade</h1>
+      <p>Controles:</p>
+      <ul>
+        <li>← : Mover a la izquierda</li>
+        <li>→ : Mover a la derecha</li>
+        <li>Espacio : Saltar</li>
+      </ul>
+      <button id="start-button">Comenzar Juego</button>
+    </section>
+
+    <!-- Pantalla del Juego -->
+    <section id="game-screen" class="screen">
+      <div id="hud">
+        <span id="score"></span>
+        <span id="lives"></span>
+        <span id="level"></span>
+      </div>
+      <canvas id="game-canvas" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Pantalla de Fin de Juego -->
+    <section id="game-over-screen" class="screen">
+      <h2>💀 ¡Game Over!</h2>
+      <p id="final-score"></p>
+      <button id="restart-button">Reintentar</button>
+    </section>
+
+    <!-- Pantalla de Nivel Completado -->
+    <section id="level-complete-screen" class="screen">
+      <h2>✅ Nivel Completado</h2>
+      <p id="level-score"></p>
+      <button id="next-level-button">Siguiente Nivel</button>
+    </section>
+  </main>
+
+  <script src="../js/mario.js"></script>
+</body>
+</html>

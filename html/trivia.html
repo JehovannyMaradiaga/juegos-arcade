@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Exprés</title>
+  <link rel="stylesheet" href="../css/trivia.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Trivia Exprés</h1>
+    <div id="trivia-container">
+      <!-- Aquí se cargarán dinámicamente las preguntas -->
+      <div id="question-box">
+        <p id="question-text">Cargando pregunta...</p>
+        <div id="options-container">
+          <!-- Opciones se generan con JS -->
+        </div>
+        <button id="next-btn" disabled>Siguiente</button>
+      </div>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h2>¡Juego Terminado!</h2>
+      <p id="score-text">Obtuviste 0 de 5 respuestas correctas.</p>
+      <button onclick="restartGame()">Volver a jugar</button>
+      <a href="../index.html"><button>Volver al menú</button></a>
+    </div>
+  </div>
+
+  <script src="../js/trivia.js"></script>
+</body>
+</html>

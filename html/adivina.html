@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adivina el Número 🎯</title>
+  <link rel="stylesheet" href="../css/adivina.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Adivina el Número</h1>
+    <p>Estoy pensando en un número del <strong>1 al 100</strong>. ¿Puedes adivinar cuál es?</p>
+
+    <div class="game-box">
+      <input type="number" id="guessInput" placeholder="Tu número aquí" min="1" max="100">
+      <button id="guessBtn">Adivinar</button>
+      <p id="feedback"></p>
+      <p>Intentos: <span id="attempts">0</span></p>
+      <button id="restartBtn" style="display: none;">Jugar de nuevo 🔄</button>
+    </div>
+
+    <a href="../index.html" class="back-link">⬅ Volver al menú</a>
+  </div>
+
+  <script src="../js/adivina.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffcc00;
+}
+
+.game-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.game-card {
+  display: block;
+  width: 180px;
+  height: 120px;
+  background: linear-gradient(145deg, #333, #444);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.game-card:hover {
+  background: #ffcc00;
+  color: #000;
+  transform: scale(1.05);
+}
